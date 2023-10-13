@@ -7,6 +7,8 @@ print("Su creador (SojoSam) no se hace responsable por el uso indebido de la mis
 print("Ante cualquier problema en su utilización o advertencia de un mal cálculo realizado, por favor enviar")
 print("reporte del mismo al siguiente mail iamsamuelsojo@gmail.com")
 print("")
+print("Si deseas apoyarme te dejo mi alias: sojo.sam.mp")
+print("")
 print("Sin nada más que agregar, te dejo con la calculadora.")
 print("")
 print("Atte. su creador")
@@ -14,18 +16,7 @@ print("-SojoSam")
 print("")
 print("ACLARACIÓN:")
 print("Para responder 'Sí' o  'No' a alguna pregunta, entonces debes presionar '1' para 'Sí' y cualquier otro NÚMERO para 'No")
-
-#SOLUCIÓN HACER UNA FUNCIÓN QUE ESCALONE SOLO UNA FILA A LA VEZ. ESO HAY QUE COMBINARLO CON UNA FUNCIÓN
-#QUE VAYA MOVIENDO EN BUCLE HASTA QUE TERMINE DE LLEGAR A TODAS LAS FILAS Y COLUMNAS.
-
-#ESTOY A UN PASO DE LOGRARLO, SOLO TENGO QUE LOGRAR QUE AL METERLE LOS PARÁMETROS DE I Y J
-#A LA FUNCIÓN ESCALONAR ME RESULEVA BIEN UNA DE LAS COLUMNAS.
-
-#LO TENGO PRÁCTICAMENTE LIST0! SOLO TENGO QUE IMPLEMENTAR BIEN LO DE MULTIPLICO A UNO POR EL OTRO Y LOS
-#RESTO
-
-#12/10/2023 20:00 hs LO LOGRÉÉÉÉÉÉÉÉÉÉÉÉÉÉÉÉÉÉÉÉÉÉÉÉÉ!!!!!!!!!!!!!!!
-
+print("")
 while True:
       ecuaciones= int(input("ingresa cantidad de ecuaciones (en número y no en letras): "))
       incognitas= int(input("ingresa cantidad de incognitas (en número y no en letras): "))
@@ -89,6 +80,7 @@ while True:
             condicion3=int(input("¿Deseas ordenar la matriz? (Sí/No): "))
             if (condicion3==1):
                   ordenar_matriz()
+                  ordenar_matriz_cond=False
                   print(matriz)
             else:
                   ordenar_matriz_cond=False
@@ -208,4 +200,3 @@ while True:
             print("")
             input("¡Un abrazo enorme! Puedes presionar cualquier tecla para cerrar el programa.")
             sys.exit()
-
