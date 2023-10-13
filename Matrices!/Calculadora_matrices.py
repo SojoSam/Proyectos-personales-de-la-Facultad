@@ -2,10 +2,11 @@ import numpy as np
 import sys
 print("¡BIENVENIDO A LA PRIMERA CALCULADORA PERFECTA PARA EL CBC (CALCULADORA CBCIANA)!")
 print("")
-print("Esta sección de la calculadora fue diseñada para poder verificar/corroborar tus resultados al escalonar matrices,")
+print("Esta sección de la calculadora fue diseñada para poder verificar/corroborar tus resultados al escalonar matrices")
+print("de sistemas lineales homogeneos de nxm.")
 print("Su creador (SojoSam) no se hace responsable por el uso indebido de la misma.")
-print("Ante cualquier problema en su utilización o advertencia de un mal cálculo realizado, por favor enviar")
-print("reporte del mismo al siguiente mail iamsamuelsojo@gmail.com")
+print("Ante cualquier problema en su utilización, advertencia de un mal cálculo realizado, ó simplemente desea compartir")
+print("alguna sugerencia, por favor enviar mail a iamsamuelsojo@gmail.com")
 print("")
 print("Si deseas apoyarme te dejo mi alias: sojo.sam.mp")
 print("")
@@ -26,7 +27,7 @@ while True:
 
       for i in range(ecuaciones):
             for j in range(incognitas):
-                  valor_incognita = float(input(f"Ingrese el valor de la incógnita {j + 1} en la ecuación {i + 1}: "))
+                  valor_incognita = float(input(f"Ingrese el valor del coeficiente de la incógnita {j + 1} en la ecuación {i + 1}: "))
                   matriz[i][j] = valor_incognita
       
       print(matriz)
@@ -118,7 +119,7 @@ while True:
             if cond_esc_a_mano==True:
                   multiplicar_por_un_escalar=True
                   while multiplicar_por_un_escalar!=False:
-                        condicion=int(input("¿Desea multiplicar una fila por algún escalar (Sí/No): "))
+                        condicion=int(input("¿Desea multiplicar una fila por algún escalar? (Sí/No): "))
                         if (condicion==1):
                                     multiplicar_por_un_escalar_fila()
                                     print(matriz)
